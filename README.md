@@ -1,5 +1,5 @@
-
-> This a ruby on rails 5 application that allow user ti create their own portfolies
+# Devcamp Portfolio Applications
+> This a ruby on rails 5 application that allow user to create their own portfolies
 
 ### Features
 
