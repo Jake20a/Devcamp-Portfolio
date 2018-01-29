@@ -57,6 +57,14 @@ class BlogsController < ApplicationController
     end
   end
 
+  def toggle_status
+    if @ blog.daft?
+      @blog.published!
+    elsif @blog.published?
+    @blog.daft!
+  end 
+  redirect_to_blogs_url, notice: 'Post status has been updted.'   
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
