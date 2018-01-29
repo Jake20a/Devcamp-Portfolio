@@ -1,8 +1,8 @@
 module SetSource
-	extened ActiveSupport::Concern
+	extend ActiveSupport::Concern
 
 	included do 
-	  before_action :set_souce
+	  before_action :set_source
 	end
 
 	def set_source
