@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
 end
 
 group :development do
@@ -51,3 +52,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2', '>= 5.2.3'
 gem 'devise', '~> 4.4', '>= 4.4.1'
+
+gem 'bootstrap', '~> 4.0.0'
+
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
+gem 'jake20a_view_tool', git: 'https://github.com/Jake20a/jake20a_view_tool'
