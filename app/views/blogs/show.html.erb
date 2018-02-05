@@ -1,15 +1,13 @@
-<%= image_tag@portfolio_item.mian_image %>
+<div class="col-sm-8 blog-main">
 
-<h1><%= @portfolio_item.title %></h1>
+  <h2><%= @blog.title %></h2>
 
-<em><%= @portfolio_item.subtitle %></em>
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
 
-<p><%= @portfolio_item.body %></p>
+  <p>
+    <%= @blog.body %>
+  </p>
 
-<h2> Technologies Used:</h2>
-
-<% @portfoilio_item.technologies.each do |t| %>
-<p><%= t.name %></p>
-<% end %>
+</div>
 
 
