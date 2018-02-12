@@ -153,7 +153,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -197,7 +197,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_bg.png') no-repeat;
+  background: image-url('New_England_mp4') no-repeat;
   background-size: cover;
 }
 
@@ -205,3 +205,15 @@ body {
   color: white;
 }
 
+.tech-news {
+color: black;
+margin: 20px;
+}
+
+.tech-news a {
+color: green;
+}
+
+.tech-news > .card {
+padding: 20px;
+}
