@@ -200,7 +200,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('horse-204335_1920.jpg') no-repeat;
+  background: image-url('home_bg.png') no-repeat;
   background-size: cover;
 }
 
@@ -236,4 +236,14 @@ body {
 
 .app-card-container a {
   color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
