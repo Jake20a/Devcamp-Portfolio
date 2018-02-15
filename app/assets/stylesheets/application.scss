@@ -27,14 +27,27 @@ a:hover {
  * Base structure
  */
 
+
+
+
 html,
 body {
   height: 100%;
+  font-family: 'BioRhyme Expanded', serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -244,6 +257,6 @@ body {
 }
 
 .skill {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
