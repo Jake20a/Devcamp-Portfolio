@@ -9,18 +9,18 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
-
 
   def copyright_generator
     Jake20aViewTool::Renderer.copyright 'Jacob Andersen', 'All rights reserved'
   end
 
+  
   def nav_items
     [
       {
@@ -43,9 +43,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
-      {url: tech_news_path,
+      {
+        url: tech_news_path,
         title: 'Tech News'
-        },
+      },
     ]
   end
 
@@ -61,6 +62,18 @@ module ApplicationHelper
 
   def active? path
     "active" if current_page? path
+  end
+
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_generator alert
+    end
+  end
+
+  def alert_generator msg
+    js add_gritter(msg, title: "Jacob Andersen Portfolio", sticky: false)
   end
 
 end

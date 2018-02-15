@@ -7,7 +7,11 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Roboto" rel="stylesheet">
+
     <meta name="keywords" content="<%= @seo_keywords %>" />
+
+    
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -19,12 +23,12 @@
         <div class="cover-container">
 
           <%= video_tag(
-              'New_England_.mp4',
+              "utah-139984_640.jpg",
               id: 'background',
               autoplay: true,
               loop: true,
               muted: true,
-              poster: 'New_England_.jpg'
+              poster: "utah-139984_640.jpg"
             )
             %>
 
@@ -34,7 +38,7 @@
 
           <%= render "shared/application_footer" %>
 
-          <%= source_helper("application") %>
+          <%= alerts %>
 
         </div>
       </div>
