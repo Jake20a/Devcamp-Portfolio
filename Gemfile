@@ -88,3 +88,5 @@ gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 
 gem 'csv', '~> 1.0', '>= 1.0.1'
+
+ruby "2.4.1"
